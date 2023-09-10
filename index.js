@@ -10,8 +10,9 @@ app.get("/api/info", (req, res) => {
     weekday: "long",
   });
   const utc_time = new Date().toISOString();
-  const github_file_url = "GitHub URL of the file being run";
-  const github_repo_url = "GitHub URL of the full source code";
+  const github_file_url =
+    "https://github.com/Nogist/simple-Api/blob/main/index.js";
+  const github_repo_url = "https://github.com/Nogist/simple-Api";
 
   const response = {
     slack_name,
